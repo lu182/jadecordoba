@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+	border: 0;
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+}
+
+body {
+    height: 100vh;       
+}
+
+header{
+    /*padding-top: 25px;*/ 
+    background-color: #c6ecde;
+}
+
+.headerLogo{
+    width: 175px;      
+}
+
+/*header>nav>ul>li>a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #007047;
+}*/
+
+.navbar-nav{
+    gap: 15px;
+}
+
+.navbar-nav>.nav-item>.nav-link{
+    font-size: 20px;
+    font-weight: 500;
+    color: #00a86b;            
+}
+
+.navbar-nav>.nav-item:last-child a{
+    color: #007047;
+}
+
+.navbar-nav>.nav-item>.nav-link:hover{
+    background-color: #55c59c;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    color: #fff;
+}
+
+.img-fluid .bannerPrincipal {    
+    background-image: url('https://images.pexels.com/photos/4507716/pexels-photo-4507716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    background-size:cover;
+    background-position-y: center;    
+    color:#fff;
+    /*font-weight: 500;*/    
+}
+
+.img-fluid .bannerPrincipal .d-grid a:first-child{
+    /*width: fit-content;*/
+    background-color: transparent;
+    border: #fff solid 1px;
+    color: #fff;
+}
+
+.img-fluid .bannerPrincipal .d-grid a:first-child:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.img-fluid .bannerPrincipal .d-grid a:nth-child(2):hover{
+    background-color: #00a86b;
+    border: #fff solid 1px;
+    color: black;
+}
