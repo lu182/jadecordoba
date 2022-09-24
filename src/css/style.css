@@ -84,6 +84,17 @@ header{
     color: black;
 }
 
+.titles{
+    color: #00a86b;
+}
+
+/*
+.card .card-img-top img{    
+    max-width: 100%;
+    height: auto;
+}
+*/
+
 
 
 /* Breakpoints*/
