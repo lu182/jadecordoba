@@ -12,9 +12,9 @@ body {
     height: 100vh;       
 }
 
-header{
-    /*padding-top: 25px;*/ 
+header{    
     background-color: #c6ecde;
+    
 }
 
 .headerLogo{
@@ -57,21 +57,20 @@ header{
 }
 
 .img-fluid .bannerPrincipal {    
-    background-image: url('https://images.pexels.com/photos/4507716/pexels-photo-4507716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background: url('https://images.pexels.com/photos/4507716/pexels-photo-4507716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), #0000006e;
+    background-blend-mode: color;
     width: 100%;
-    height: 70vh;
-    box-sizing: border-box;
+    height: 100vh !important;
+    box-sizing: border-box !important;
     background-size:cover;
     background-position-y: center;    
-    color:#fff;
-    /*font-weight: 500;*/    
+    color:#fff;           
 }
 
-.img-fluid .bannerPrincipal .d-grid a:first-child{
-    /*width: fit-content;*/
+.img-fluid .bannerPrincipal .d-grid a:first-child{    
     background-color: transparent;
     border: #fff solid 1px;
-    color: #fff;
+    color: #fff;    
 }
 
 .img-fluid .bannerPrincipal .d-grid a:first-child:hover{
@@ -83,4 +82,13 @@ header{
     background-color: #00a86b;
     border: #fff solid 1px;
     color: black;
+}
+
+
+
+/* Breakpoints*/
+@media screen and (max-width: 576px) {
+    .img-fluid .bannerPrincipal .d-grid{
+        display: flex !important;        
+    }
 }
