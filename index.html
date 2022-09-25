@@ -13,9 +13,10 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/f3c93a9c69.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body>    
     <header class="h-30">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -52,8 +53,7 @@
     </header>
     <main>
         <section class="img-fluid">
-            <div
-                class="bannerPrincipal d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex flex-column justify-content-sm-end justify-content-md-end justify-content-lg-end justify-content-xl-center p-5">
+            <div class="bannerPrincipal d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex flex-column justify-content-sm-end justify-content-md-end justify-content-lg-end justify-content-xl-center p-5">
                 <p class="h1 pt-5">JADE CÓRDOBA</p>
                 <p class="text-start fw-normal lh-sm">La web de cuidados de plantas para principiantes,<br> inexpertos y
                     despistados. <br>
@@ -124,7 +124,7 @@
             <div class="container text-center pt-4 pb-5">
                 <div class="row">
                     <div class="col align-self-center">
-                        <a href="#" class="btn btn-success btn-lg fw-semibold" role="button">Ver más</a>
+                        <a href="./src/pages/plantas.html" class="btn btn-success btn-lg fw-semibold" role="button">Ver más</a>
                     </div>                    
                 </div>                
             </div>            
@@ -148,12 +148,20 @@
         <section id="contacto"></section>
     </main>
     <footer>
-
+    
     
     </footer>
+
+    <!--Botón Ir Arriba-->
+    <button class="btn-up hide" id="up">
+        <i class="fa-sharp fa-solid fa-circle-chevron-up"></i>
+    </button>
+    <!--Fin Botón Ir Arriba --> 
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+    <script src="./src/js/ir-arriba.js"></script>
 </body>
 </html>
