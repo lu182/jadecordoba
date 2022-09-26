@@ -23,11 +23,11 @@ body {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border: 1x solid #00a86b;
-    background-color: #00a86b;    
+    background-color: #c6ecde;    
     position: fixed;
     right: 20px;
     left: 95%;
-    bottom: 30px;
+    bottom: 110px;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -41,7 +41,8 @@ body {
 }
 
 .fa-circle-chevron-up{
-    font-size: 25px;    
+    font-size: 25px;
+    color: #00a86b;    
 }
 
 /*Clases para JS*/
@@ -60,12 +61,6 @@ header{
 .headerLogo{
     width: 175px;      
 }
-
-/*header>nav>ul>li>a{
-    font-size: 20px;
-    font-weight: 500;
-    color: #007047;
-}*/
 
 .navbar-nav{
     gap: 15px;
@@ -128,14 +123,45 @@ header{
     color: #00a86b;
 }
 
-/*
-.card .card-img-top img{    
-    max-width: 100%;
-    height: auto;
+.ver-mas .btn:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    background-color: #00a86b;
+    border: #fff solid 1px;
+    color: black;
 }
-*/
 
+aside .btn-conoce-mas{
+    background-color: transparent;
+    border: #fff solid 1px;
+    color: #fff;    
+}
 
+aside .btn-conoce-mas:hover{
+    background-color: #fff;
+    color: black;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/*Footer*/
+footer{
+    background-color: #c6ecde;
+}
+
+footer nav a img:hover{
+   transform: scale(2);
+   -webkit-transform: scale(2);
+   -moz-transform: scale(2);
+   -ms-transform: scale(2);
+   -o-transform: scale(2);
+}
 
 /* Breakpoints*/
 @media screen and (max-width: 576px) {
