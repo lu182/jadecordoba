@@ -64,7 +64,7 @@
                     No te pierdas nuestros tips para llenar de color tu hogar.<br> 
                     ¡Es más fácil de lo que pensás!</p>
                 <div class="d-grid gap-2 d-sm-flex d-md-flex d-lg-flex">
-                    <a href="#servicios" class="btn btn-outline-primary fw-semibold" role="button">Servicios</a>
+                    <a href="./src/pages/servicios.html" class="btn btn-outline-primary fw-semibold" role="button">Servicios</a>
                     <a href="#contacto" class="btn btn-success fw-semibold" role="button">Contacto</a>
                 </div>
             </div>
@@ -123,7 +123,7 @@
             <div class="ver-mas container text-center pt-4 pb-5">
                 <div class="row">
                     <div class="col align-self-center">
-                        <a href="./src/pages/plantas.html" class="btn btn-success btn-sm fw-semibold" role="button">Ver más</a>
+                        <a href="./src/pages/plantas.html" class="btn btn-success btn-lg fw-semibold" role="button">Ver más</a>
                     </div>                    
                 </div>                
             </div>            
@@ -147,13 +147,38 @@
             </div>            
         </aside>       
 
-        <section id="contacto">
-            <!--COMPLETAR-->
+        <section class="contacto" id="contacto">
+            <div class="container-fluid">
+                <div class="row">
+                    <h3 class="titles text-center text-uppercase fw-bold pt-4">Contacto</h3>
+                    <p class="text-center fw-semibold">¿Tenés dudas o consultas? Comunicate con nosotros</p>
+                </div>
+            </div>
+            <div class="container">
+                <form class="row g-3">                    
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label"></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label"></label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Apellido" required>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control fw-light" placeholder="Sobre qué quieres hablar?" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Sobre qué quieres hablar?</label>
+                        <p class="fs-6 fw-light">Recuerda incluir el nombre de las plantas de tu interés.</p>
+                    </div>
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btnFormEnviar btn btn-success fw-bold p-2">Enviar</button>                        
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="d-flex">        
         <div class="container-fluid">
-            <h6 class="text-center pt-4">© Luciana Fernández - Todos los derechos reservados</h6>
+            <h6 class="text-center fw-bold pt-4">© Luciana Fernández - Todos los derechos reservados</h6>
             <nav class="d-flex flex-row fw-bold text-center justify-content-center mt-2 mb-3">               
                 <a href="https://www.linkedin.com/in/lucianafernandez182/" target="_blank"><img src="./src/assets/svg/LinkedIn.svg" width=40px alt="linkedin"></a>        
             <a href="https://github.com/lu182" target="_blank"><img src="./src/assets/svg/github.svg" width=40px alt="github"></a>

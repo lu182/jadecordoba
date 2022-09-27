@@ -27,7 +27,7 @@ body {
     position: fixed;
     right: 20px;
     left: 95%;
-    bottom: 110px;
+    bottom: 120px;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -113,6 +113,10 @@ header{
     color: black;
 }
 
+.img-fluid .bannerPrincipal .d-grid a:nth-child(2){
+    background-color: #00a86b;
+}
+
 .img-fluid .bannerPrincipal .d-grid a:nth-child(2):hover{
     background-color: #00a86b;
     border: #fff solid 1px;
@@ -121,6 +125,10 @@ header{
 
 .titles{
     color: #00a86b;
+}
+
+.ver-mas .btn{
+    background-color: #00a86b;
 }
 
 .ver-mas .btn:hover{
@@ -148,6 +156,14 @@ aside .btn-conoce-mas:hover{
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
+}
+
+.contacto .btnFormEnviar{
+    background-color: #00a86b;
+}
+
+.contacto .btnFormEnviar:hover{    
+    background-color: #007047;    
 }
 
 /*Footer*/
