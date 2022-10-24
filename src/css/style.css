@@ -154,6 +154,10 @@ header{
     /*Fin Botón Ver Más*/
 
     /*Aside*/
+aside .container-fluid{
+    background-color: #00a86b;
+}
+
 aside .btn-conoce-mas{
     background-color: transparent;
     border: #fff solid 1px;
@@ -202,4 +206,21 @@ footer nav a img:hover{
     .img-fluid .bannerPrincipal .d-grid{
         display: flex !important;        
     }
+}
+
+/*Sección Servicios*/
+#packs .btnFormBorrar{
+    background-color: #00a86b;
+}
+
+#packs .btnFormBorrar:hover{
+    background-color: #007047;
+}
+
+#packs .btnFormResumen{
+    background-color: #00a86b;
+}
+
+#packs .btnFormResumen:hover{
+    background-color: #007047;
 }
