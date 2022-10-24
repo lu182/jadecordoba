@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-tofit=no">
     <title>Trabajo Integrador - Luciana Fernández</title>
     <link rel="shortcut icon" href="../assets/icons/LogotipoJade.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
@@ -14,18 +14,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/f3c93a9c69.js" crossorigin="anonymous"></script>
 </head>
-<body>    
-    <div style="text-align: center; padding-top: 150px;">
-        <img src="../assets/images/en-construccion.jpg" alt="Sección en construcción">        
-    </div>
-
-
+<body>
+    <header class="h-30">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img class="headerLogo pt-4 animate__animated animate__bounceInLeft"
+                        src="../assets/images/Logotipo2.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./plantas.html">Plantas</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cuidados.html">Cuidados</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="col text-center p-3">
+                    <img src="../assets/images/en-construccion.jpg" alt="Sección en construcción">
+                </div>                
+            </div>
+        </section>
+    </main>   
+    <footer class="d-flex">        
+        <div class="container-fluid">
+            <h6 class="text-center pt-4">© Luciana Fernández - Todos los derechos reservados</h6>
+            <nav class="d-flex flex-row fw-bold text-center justify-content-center mt-2 mb-3">               
+                <a href="https://www.linkedin.com/in/lucianafernandez182/" target="_blank"><img src="../assets/svg/LinkedIn.svg" width=40px alt="linkedin"></a>        
+            <a href="https://github.com/lu182" target="_blank"><img src="../assets/svg/github.svg" width=40px alt="github"></a>
+            </nav>                 
+        </div>
+    </footer>   
 
     <!--Botón Ir Arriba-->
     <button class="btn-up hide" id="up">
         <i class="fa-sharp fa-solid fa-circle-chevron-up"></i>
     </button>
-    <!--Fin Botón Ir Arriba --> 
+    <!--Fin Botón Ir Arriba -->
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
