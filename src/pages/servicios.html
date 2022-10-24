@@ -44,7 +44,7 @@
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#packs">Comprar Packs</a>
+                            <a class="nav-link" href="#cuadrosPacks">Comprar Packs</a>
                         </li>
                     </ul>
                 </div>
@@ -183,37 +183,72 @@
                 </p>
             </div>
         </section>
-        <section id="cuadros">
+        <section id="cuadrosPacks">
             <h1 class="titles fw-bold text-center mt-3">Elige tu Pack</h1>
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 mb-3">
-                        <div class="card border-primary">
-                            <div class="card-header border-primary text-center">BASIC</div>
+                        <div class="card border-primary h-100">
+                            <div class="card-header border-primary text-center fs-2 fw-bold">BASIC</div>
                             <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <!--<h5 class="card-title">Primary card title</h5>-->
+                                <p class="card-text">
+                                    <b>&#8702</b> Servicio de consultoría por videollamada de 45' <br>
+                                    <b>&#8702</b> Mail con listado detallado de plantas para cada espacio <br>
+                                    <b>&#8702</b> Descuentos especiales en la compra de plantas de nuestro catálogo llevando por 
+                                    cantidad <br>
+                                    <b>&#8702</b> Envío de plantas (a cargo cliente) sin instalación
+                                    <br>
+                                </p>
+                                <p class="card-text text-center">
+                                    Tiene un descuento 
+                                </p>
+                                <p class="card-text text-center fw-bold">
+                                    15% 
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mb-3">
-                        <div class="card border-success">
-                            <div class="card-header border-success text-center">MEDIUM</div>
+                        <div class="card border-success h-100">
+                            <div class="card-header border-success text-center fs-2 fw-bold">MEDIUM</div>
                             <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <!--<h5 class="card-title">Primary card title</h5>-->
+                                <p class="card-text">
+                                    <b>&#8702</b> Servicio de consultoría por videollamada de 1 hora <br>
+                                    <b>&#8702</b> Descuentos especiales en la compra de plantas de nuestro catálogo 
+                                    llevando por cantidad <br>
+                                    <b>&#8702</b> Envío gratis <br>
+                                    <b>&#8702</b> Instalación sin cargo <br><br><br>
+                                </p>
+                                <p class="card-text text-center">
+                                    Tiene un descuento 
+                                </p>
+                                <p class="card-text text-center fw-bold">
+                                    50% 
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mb-3">
-                        <div class="card border-warning">
-                            <div class="card-header border-warning text-center">PREMIUM</div>
+                        <div class="card border-warning h-100">
+                            <div class="card-header border-warning text-center fs-2 fw-bold">PREMIUM</div>
                             <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <!--<h5 class="card-title">Primary card title</h5>-->
+                                <p class="card-text">
+                                    <b>&#8702</b> Servicio de consultoría personalizada <br>
+                                    <b>&#8702</b> Guía completa con todos nuestros tips de cuidados de plantas <br>
+                                    <b>&#8702</b> Envío gratis <br>
+                                    <b>&#8702</b> Instalación sin cargo <br>
+                                    <b>&#8702</b> Mantenimiento con visitas semanales, quincenales o mensuales gratis
+                                    por 1 año <br><br><br>
+                                </p>
+                                <p class="card-text text-center">
+                                    Tiene un descuento 
+                                </p>
+                                <p class="card-text text-center fw-bold">
+                                    80% 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -221,9 +256,11 @@
             </div>
         </section>
 
-        <section id="packs">            
+        <section id="formPacks">            
             <div class="container">
                 <form class="row g-2" name="formulario">
+                    <p class="text-center fw-bold mt-4">VENTA</p>
+                    <h2 class="text-center fw-bold">VALOR DE PACK $ <span id="valorPackSinDto" name="valorPackSinDto"></span></h2>
                     <div class="col-md-6">
                         <label for="firstName" class="form-label"></label>
                         <input id="firstName" name="firstName" type="text" class="form-control" placeholder="Nombre"

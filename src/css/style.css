@@ -209,18 +209,19 @@ footer nav a img:hover{
 }
 
 /*Sección Servicios*/
-#packs .btnFormBorrar{
+#formPacks .btnFormBorrar{
     background-color: #00a86b;
 }
 
-#packs .btnFormBorrar:hover{
+#formPacks .btnFormBorrar:hover{
     background-color: #007047;
 }
 
-#packs .btnFormResumen{
+#formPacks .btnFormResumen{
     background-color: #00a86b;
 }
 
-#packs .btnFormResumen:hover{
+#formPacks .btnFormResumen:hover{
     background-color: #007047;
 }
+/*Fin sección Servicios*/
