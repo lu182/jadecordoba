@@ -101,7 +101,7 @@ header{
     background: url('https://images.pexels.com/photos/4507716/pexels-photo-4507716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), #0000006e;
     background-blend-mode: color;
     width: 100%;
-    height: 100vh !important;
+    /*height: 100vh !important;*/
     box-sizing: border-box !important;
     background-size:cover;
     background-position-y: center;    
