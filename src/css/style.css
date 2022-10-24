@@ -44,6 +44,7 @@ body {
     font-size: 25px;
     color: #00a86b;    
 }
+/*Fin botón para hacer la pagina hacia arriba*/
 
 /*Clases para JS*/
 .hide{
@@ -53,7 +54,9 @@ body {
 .active{
     opacity: 1;
 }
+/*Fin clases para JS*/
 
+/*Header*/
 header{    
     background-color: #c6ecde;    
 }
@@ -90,7 +93,10 @@ header{
     -o-transition: all .5s ease 0s;
     color: #fff;
 }
+/*Fin header*/
 
+/*Main*/
+    /*Banner*/
 .img-fluid .bannerPrincipal {    
     background: url('https://images.pexels.com/photos/4507716/pexels-photo-4507716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), #0000006e;
     background-blend-mode: color;
@@ -122,11 +128,15 @@ header{
     border: #fff solid 1px;
     color: black;
 }
+    /*Fin banner*/
 
+    /*Títulos*/
 .titles{
     color: #00a86b;
 }
+    /*Fin títulos*/
 
+    /*Botón Ver Más*/
 .ver-mas .btn{
     background-color: #00a86b;
 }
@@ -141,12 +151,14 @@ header{
     border: #fff solid 1px;
     color: black;
 }
+    /*Fin Botón Ver Más*/
 
+    /*Aside*/
 aside .btn-conoce-mas{
     background-color: transparent;
     border: #fff solid 1px;
     color: #fff;    
-}
+}    
 
 aside .btn-conoce-mas:hover{
     background-color: #fff;
@@ -157,7 +169,9 @@ aside .btn-conoce-mas:hover{
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
 }
+    /*Fin aside*/
 
+    /*Contacto*/
 .contacto .btnFormEnviar{
     background-color: #00a86b;
 }
@@ -165,6 +179,9 @@ aside .btn-conoce-mas:hover{
 .contacto .btnFormEnviar:hover{    
     background-color: #007047;    
 }
+    /*Fin contacto*/
+
+/*Fin main*/
 
 /*Footer*/
 footer{
@@ -178,8 +195,9 @@ footer nav a img:hover{
    -ms-transform: scale(2);
    -o-transform: scale(2);
 }
+/*Fin footer*/
 
-/* Breakpoints*/
+/*Breakpoints*/
 @media screen and (max-width: 576px) {
     .img-fluid .bannerPrincipal .d-grid{
         display: flex !important;        
