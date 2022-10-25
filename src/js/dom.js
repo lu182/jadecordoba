@@ -19,3 +19,4 @@ const totalToPay = document.getElementById('totalAPagar')
 // Botones
 const deleteBtn = document.getElementById('btnBorrar')
 const summaryBtn = document.getElementById('btnResumen')
+const submitBtn = document.getElementById('btnEnviar')

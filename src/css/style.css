@@ -224,4 +224,12 @@ footer nav a img:hover{
 #formPacks .btnFormResumen:hover{
     background-color: #007047;
 }
+
+#formPacks .btnFormEnviar{
+    background-color: #00a86b;
+}
+
+#formPacks .btnFormEnviar:hover{
+    background-color: #007047;
+}
 /*Fin sección Servicios*/
