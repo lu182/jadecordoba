@@ -188,10 +188,9 @@
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 mb-3">
-                        <div class="card border-primary h-100">
+                        <div id= "pack1" class="card border-primary h-100">
                             <div class="card-header border-primary text-center fs-2 fw-bold">BASIC</div>
-                            <div class="card-body">
-                                <!--<h5 class="card-title">Primary card title</h5>-->
+                            <div class="card-body">                                
                                 <p class="card-text">
                                     <b>&#8702</b> Servicio de consultoría por videollamada de 45' <br>
                                     <b>&#8702</b> Mail con listado detallado de plantas para cada espacio <br>
@@ -210,10 +209,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mb-3">
-                        <div class="card border-success h-100">
+                        <div id= "pack2" class="card border-success h-100">
                             <div class="card-header border-success text-center fs-2 fw-bold">MEDIUM</div>
-                            <div class="card-body">
-                                <!--<h5 class="card-title">Primary card title</h5>-->
+                            <div class="card-body">                                
                                 <p class="card-text">
                                     <b>&#8702</b> Servicio de consultoría por videollamada de 1 hora <br>
                                     <b>&#8702</b> Descuentos especiales en la compra de plantas de nuestro catálogo 
@@ -231,10 +229,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mb-3">
-                        <div class="card border-warning h-100">
+                        <div id= "pack3" class="card border-warning h-100">
                             <div class="card-header border-warning text-center fs-2 fw-bold">PREMIUM</div>
-                            <div class="card-body">
-                                <!--<h5 class="card-title">Primary card title</h5>-->
+                            <div class="card-body">                                
                                 <p class="card-text">
                                     <b>&#8702</b> Servicio de consultoría personalizada <br>
                                     <b>&#8702</b> Guía completa con todos nuestros tips de cuidados de plantas <br>
@@ -277,7 +274,7 @@
                     </div>
                     <div class="col-md-6 p-2">
                         <label for="cantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="cantidad" placeholder="cantidad" required>
+                        <input id="cantidad" type="number" class="form-control" value= 1 placeholder="cantidad" min= "1" max="10" required>
                     </div>
                     <div class="col-md-6 p-2">
                         <label for="seleccionPack" class="form-label">Pack</label>
@@ -295,9 +292,9 @@
                     </div>
 
                     <div class="d-flex justify-content-center gap-2 mb-3">
-                        <button id="boton1" type="submit"
+                        <button id="btnBorrar" type="submit"
                             class="col-md-6 btn btnFormBorrar text-white fw-semibold p-2">Borrar</button>
-                        <button id="boton2" type="submit"
+                        <button id="btnResumen" type="submit"
                             class="col-md-6 btn btnFormResumen text-white fw-semibold p-2">Resumen</button>
                     </div>
                 </form>
@@ -329,6 +326,8 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
     <script src="../js/ir-arriba.js"></script>
+    <script src="../js/dom.js"></script>
+    <script src="../js/cuadrosPacks-functions.js"></script>
 </body>
 
 </html>
