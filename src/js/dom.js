@@ -5,7 +5,7 @@ const pack3 = document.getElementById('pack3')
 const packages = document.getElementsByClassName('card')
 
 // Valor de Pack
-const packValueWDiscount = document.getElementById('valorPackSinDto')
+let packValueWDiscount = document.getElementById('valorPackSinDto')
 
 // Formulario
 const form = document.forms.formulario

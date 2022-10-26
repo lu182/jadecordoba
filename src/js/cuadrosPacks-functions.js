@@ -1,3 +1,5 @@
+let valoresPacks = [3000, 6000, 9000];
+
 function replaceText1(pack){    
     pack.classList.replace('text-dark', 'text-white')    
 }
@@ -26,9 +28,9 @@ function packClick(pack){
 
     pack.classList.replace('bg-muted','bg-danger')
     select.value =
-        pack.id === 'pack1' && '1' ||
-        pack.id === 'pack2' && '2' ||
-        pack.id === 'pack3' && '3'
+        pack.id === 'pack1' && (packValueWDiscount.innerHTML = valoresPacks[0]) && '1' ||
+        pack.id === 'pack2' && (packValueWDiscount.innerHTML = valoresPacks[1]) && '2' ||
+        pack.id === 'pack3' && (packValueWDiscount.innerHTML = valoresPacks[2]) && '3'
 
     for(let item of packages){
         if(item.id !== pack.id){            
