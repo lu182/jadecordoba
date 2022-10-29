@@ -14,7 +14,8 @@ function deleteFn(e){
     formulario.lastName.value = ''
     formulario.email.value = ''    
     formulario.opciones.value = ''
-    totalToPay.innerHTML = ''    
+    totalToPay.innerHTML = '' 
+    totalToPayDiv.classList.replace('border-success', 'border-muted')   
     mutePacks()    
 }
 
@@ -43,15 +44,15 @@ function summaryFn(e){
         totalToPay.textContent = totalPurchase;
     }
 
-    totalToPay.classList.replace('bg-muted', 'bg-info')
-
+    totalToPay.classList.replace('bg-muted', 'bg-info')    
+    totalToPayDiv.classList.replace('border-muted', 'border-success')
 }    
 
 
 function submitFn(e){
     e.preventDefault()
     console.log('SE HA ENVIADO')
-    //TODO Validar que todos los campos del form esten completos + SweetAlert
+    //TODO Validar que todos los campos del form esten completos + SweetAlert    
 }
 
 

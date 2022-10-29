@@ -15,6 +15,7 @@ const select = document.querySelector('#seleccionPack')
 
 // Total A Pagar
 const totalToPay = document.getElementById('totalAPagar')
+const totalToPayDiv = document.querySelector('.totalToPayDiv')
 
 // Botones
 const deleteBtn = document.getElementById('btnBorrar')
