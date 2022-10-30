@@ -232,4 +232,10 @@ footer nav a img:hover{
 #formPacks .btnFormEnviar:hover{
     background-color: #007047;
 }
+
+/*Validaciones del Form: */
+.input-error{
+    border: 2px solid #bb2929 !important; 
+}
+
 /*Fin sección Servicios*/

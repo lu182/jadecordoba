@@ -10,6 +10,9 @@ let packValueWDiscount = document.getElementById('valorPackSinDto')
 // Formulario
 const form = document.forms.formulario
 
+//Inputs
+const inputs = document.querySelectorAll('#formulario .formulario__input')
+
 // Select
 const select = document.querySelector('#seleccionPack')
 

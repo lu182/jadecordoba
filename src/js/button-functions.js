@@ -20,8 +20,9 @@ function deleteFn(e){
 }
 
 function summaryFn(e){
-    e.preventDefault()           
-
+    e.preventDefault()
+    let error = validate();
+    
     let purchaseAmount = packValueWDiscount.innerHTML * formulario.cantidad.value;
     let discount;
     let totalPurchase;    
@@ -46,16 +47,85 @@ function summaryFn(e){
 
     totalToPay.classList.replace('bg-muted', 'bg-info')    
     totalToPayDiv.classList.replace('border-muted', 'border-success')
-}    
 
+    if(error){
+        Swal.fire({
+            'title': 'Datos incompletos',
+            'text': 'Por favor revise los campos resaltados',
+            'icon': 'warning',
+            'timer': '3000'
+        }); 
+    }else{
+        Swal.fire({
+            title: `Usted está por adquirir el PACK: ${formulario.opciones.value}`,
+            text: `Los datos ingresados son: 
+                    Nombre: ${formulario.firstName.value}
+                    Apellido: ${formulario.lastName.value}
+                    Correo: ${formulario.email.value}
+                    Cantidad: ${formulario.cantidad.value}
+                    Total A Pagar: ${totalPurchase}`,
+            icon: 'info',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+        }).then((result) => {
+        if (result.isDismissed) {
+            deleteFn(e);
+        }
+        });
+    }
 
-function submitFn(e){
-    e.preventDefault()
-    console.log('SE HA ENVIADO')
-    //TODO Validar que todos los campos del form esten completos + SweetAlert    
+}
+
+let validate = () => {
+    let error = false;
+
+    for(let i=0; i < inputs.length; i++){
+        if(inputs[i].value === ''){
+            inputs[i].classList.add('input-error'); 
+            error = true;
+        }else{
+            inputs[i].classList.remove('input-error');             
+        }
+    }
+    return error;
+}
+
+function getInfo(e) {
+    e.preventDefault();
+
+    let error = validate();
+    //console.log(error)
+    
+    if(error){
+        Swal.fire({
+            'title': 'Sus datos no se pudieron enviar. La compra no ha podido ser procesada',
+            'text': 'Por favor revise los campos resaltados',
+            'icon': 'error',
+            'timer': '5000'
+        });
+    }else{        
+        Swal.fire({
+            'title': 'Proceso realizado con éxito',
+            'text': 'Sus datos se enviaron correctamente.La compra ha sido procesada',
+            'icon': 'success',
+            'timer': '8000'
+        });
+        const info = {
+            nombre: formulario.firstName.value,
+            apellido: formulario.lastName.value,
+            correo: formulario.email.value,
+            cantidad: formulario.cantidad.value,
+            opcion: formulario.opciones.value,
+            totalAPagar: totalToPay.innerHTML
+        }
+        console.log(info)
+        deleteFn(e);
+    }
 }
 
 
 deleteBtn.onclick = (e) => { deleteFn(e) }
 summaryBtn.onclick = (e) => { summaryFn(e) }
-submitBtn.onclick = (e) => { submitFn(e) }
+submitBtn.onclick = (e) => { getInfo(e) }
