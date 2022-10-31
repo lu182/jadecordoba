@@ -61,10 +61,6 @@ header{
     background-color: #c6ecde;    
 }
 
-.headerLogo{
-    width: 175px;      
-}
-
 .navbar-nav{
     gap: 15px;
 }
