@@ -4,6 +4,7 @@ Proyecto integrador de Frontend en el marco del programa Codo a Codo dictado por
 El proyecto consistía en realizar una réplica de una imagen brindada por el profesor a cargo del curso con la opción de adaptarlo como quisieramos.
 # Tecnologías:
 HTML5, CSS3, Bootstrap, Javascript
+___
 ### [Link directo al proyecto desplegado](https://lu182.github.io/jadecordoba/)
 # Imágenes:
 ![final_front_2022-1](https://user-images.githubusercontent.com/39106189/203643193-607d3baa-2b1f-4e25-ba62-dec89c2f7f1a.jpg)
