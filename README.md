@@ -1,6 +1,6 @@
 # Jade Córdoba
 Web de cuidado de plantas para principiantes.
-Proyecto integrador de Frontend en el marco del programa de Codo a Codo dictado por el Gobierno de Buenos Aires.
+Proyecto integrador de Frontend en el marco del programa Codo a Codo dictado por el Gobierno de Buenos Aires.
 El proyecto consistía en realizar una réplica de una imagen brindada por el profesor a cargo del curso con la opción de adaptarlo como quisieramos.
 # Tecnologías:
 HTML5, CSS3, Bootstrap, Javascript
