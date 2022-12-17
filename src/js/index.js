@@ -42,7 +42,9 @@ function getInfo(e) {
         const info = {
             nombre: formulario.firstName.value,
             apellido: formulario.lastName.value,
-            mensaje: formulario.textarea.value
+            email: formulario.email.value,
+            mensaje: formulario.textarea.value,
+            check: formulario.check.checked
         }
         //console.log(info)
         borrarFn();
@@ -52,6 +54,7 @@ function getInfo(e) {
 function borrarFn(){
     formulario.firstName.value = ''
     formulario.lastName.value = ''
+    formulario.email.value = ''
     formulario.textarea.value = ''
 }
 

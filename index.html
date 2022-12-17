@@ -161,13 +161,23 @@
                         <label for="lastName" class="form-label"></label>
                         <input type="text" class="form-control formulario__input" name="lastName" id="lastName" placeholder="Apellido" required>
                     </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control formulario__input" name="email" id="email" placeholder="Correo electrónico" required>
+                    </div>
                     <div class="form-floating">
                         <textarea class="form-control fw-light formulario__input" placeholder="Sobre qué quieres hablar?" 
                             id="textarea" name="textarea" style="height: 100px" required></textarea>
                         <label for="textarea">Sobre qué quieres hablar?</label>
                         <p class="fs-6 fw-light">Recuerda incluir el nombre de las plantas de tu interés.</p>
                     </div>
-                    <div class="d-grid mb-3">
+                    <div class="col-md-6 mb-4">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" name="check" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Deseo recibir noticias de Jade Córdoba a mi correo</label>
+                        </div>
+                    </div>                    
+                    <div class="d-grid mb-5">
                         <button type="submit" id="btnEnviar" class="btnFormEnviar btn btn-success fw-bold p-2">Enviar</button>                        
                     </div>
                 </form>
